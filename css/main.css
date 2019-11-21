@@ -98,6 +98,111 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*---------------- Base Header - footer Styles --------------------*/
+
+header, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header Styles */
+
+header {
+
+}
+
+header .content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header figure{
+
+}
+.header-divider{
+
+}
+header nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap
+}
+
+/*---------------- Mobile Styles - Homepage --------------------*/
+h1{
+
+}
+h2{
+
+}
+h3{
+
+}
+p{
+
+}
+
+.hero-area {
+
+}
+
+aside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside .content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-discription{
+
+}
+
+.form {
+
+}
+
+.features{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer Styles */
+
+footer{
+
+}
+
+footer .content-wrapper{
+
+}
+
+.contact{
+
+}
+
+.social{
+
+}
+.copyright{
+
+}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
