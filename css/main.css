@@ -104,6 +104,7 @@ header, footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 /* Header Styles */
@@ -116,6 +117,7 @@ header .content-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 header figure{
 
@@ -152,12 +154,14 @@ aside{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 aside .content-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 .form-discription{
@@ -172,12 +176,14 @@ aside .content-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 .reviews{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 /* Footer Styles */
@@ -187,7 +193,10 @@ footer{
 }
 
 footer .content-wrapper{
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .contact{
