@@ -101,6 +101,7 @@ textarea {
 /*---------------- Base Header - footer Styles --------------------*/
 
 header, footer {
+  background: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,12 +140,16 @@ header nav ul{
 }
 
 /*---------------- Mobile Styles - Homepage --------------------*/
+h1, h2, h3, h4, p{
+  color: #ffffff;
+}
 
 .hero-area {
-
+  background: #999;
 }
 
 aside{
+  background: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,6 +179,7 @@ aside .content-wrapper{
 }
 
 .features{
+  background: #999;
   padding: 56px 0 60px 0;
   display: flex;
   justify-content: center;
@@ -189,6 +195,7 @@ aside .content-wrapper{
 }
 
 .reviews{
+  background: #2a423a;
   padding: 50px 0 50px 0;
   display: flex;
   justify-content: center;
