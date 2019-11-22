@@ -110,10 +110,12 @@ header, footer {
 /* Header Styles */
 
 header {
-
+  padding: 15px 0;
 }
 
 header .content-wrapper{
+  margin: 0; 
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,28 +125,20 @@ header figure{
 
 }
 .header-divider{
-
+  width: 100%;
 }
 header nav{
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap
 }
+header nav ul{
+  width: 50%;
+}
 
 /*---------------- Mobile Styles - Homepage --------------------*/
-h1{
-
-}
-h2{
-
-}
-h3{
-
-}
-p{
-
-}
 
 .hero-area {
 
@@ -158,6 +152,7 @@ aside{
 }
 
 aside .content-wrapper{
+  padding: 32px 0 53px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,25 +160,42 @@ aside .content-wrapper{
 }
 
 .form-discription{
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .form {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .features{
+  padding: 56px 0 60px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
+.features p{
+  margin: 0;
+}
+.features article{
+  width: 55%;
+}
 
 .reviews{
+  padding: 50px 0 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+.reviews h3{
+  width: 80%;
 }
 
 /* Footer Styles */
@@ -191,8 +203,13 @@ aside .content-wrapper{
 footer{
 
 }
+footer p{
+  margin: 0;
+}
 
 footer .content-wrapper{
+  width: 55%;
+  margin: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
