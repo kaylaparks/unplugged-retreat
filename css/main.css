@@ -388,7 +388,18 @@ footer .content-wrapper{
 @media only screen and (min-width: 768px){
   /*----Tablet styles here------*/
 
-  
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  /* ----- Header Styles ------*/
+  header{
+    justify-content: ;
+  }
+  header .content-wrapper{
+    justify-content: ;
+  }
   .header-divider{
     display: none;
   }
@@ -399,6 +410,8 @@ footer .content-wrapper{
     font-size: 1em;
   }
   
+  /* ----- Main Styles ------*/
+
   .hero-area {
     height: 600px;
   }
@@ -407,13 +420,18 @@ footer .content-wrapper{
     width: 60%;
     margin: 0 65px;
   }
+
+  /* ----- Form Styles ------*/
+
   aside{
     padding: 0 65px;
   }
   
   aside .content-wrapper{
+    display: flex;
     justify-content: flex-start;
     align-items: baseline;
+    flex-flow: row wrap;
     padding: 0;
   }
   
@@ -442,6 +460,9 @@ footer .content-wrapper{
     height: 50px;
     width: 250px;
   }
+
+  /* ----- Features Styles ------*/
+
   .features{
     padding: 56px 0 60px 0;
     flex-direction: row;
@@ -458,6 +479,8 @@ footer .content-wrapper{
   }
   
   .features article{
+    flex-basis: ;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -471,6 +494,8 @@ footer .content-wrapper{
     padding: 0;
   }
   
+  /* ----- Review Styles ------*/
+
   .reviews{
     background: #2a423a;
     padding: 50px 22px;
@@ -491,15 +516,70 @@ footer .content-wrapper{
     width: 170px;
     font-size: 1.2em;
   }
-  .contact{
 
-  }
-  
-  .social{
-  
+  /* ----- Footer Styles ------*/
+
+  footer .content-wrapper {
+    width: ;
+    margin:  100px 0;
   }
 
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .contact {
+      margin-bottom: 0;
+  }
+
+  footer .copyright {
+      width: ;
+  }
 }
+
+
+/*------------------------------------------------------------------------------
+    ABOUT PAGE
+------------------------------------------------------------------------------*/
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mission-content p {
+  width: ;
+}
+
+.contact-section .content-wrapper h2 {
+  width: ;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*------------------------------------------------------------------------------
+    FAQ PAGE
+------------------------------------------------------------------------------*/
+
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+
+.faq-content {
+  flex-basis: 40%;
+}
+
+.faq h2 {
+  width: 100%;
+}
+
 
 @media only screen and (min-width: 1200px){
   /*----Desktop styles here------*/
