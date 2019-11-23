@@ -122,21 +122,31 @@ header .content-wrapper{
   align-items: center;
   flex-flow: row wrap;
 }
-header figure{
-
-}
 .header-divider{
   width: 100%;
+  height: 2px;
+  background: #999;
+  margin: 10px 0;
 }
 header nav{
   width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap
+  flex-direction: row;
 }
 header nav ul{
-  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li{
+  display: inline;
+  
+}
+header nav ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
 }
 
 /*---------------- Mobile Styles - Homepage --------------------*/
@@ -145,7 +155,22 @@ h1, h2, h3, h4, p{
 }
 
 .hero-area {
-  background: #999;
+  height: 500px;
+  background-image: url("../img/jake-melara-30679-unsplash.png");
+  background-size:cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 54px 0;
+  display: flex;
+  justify-content: flex-start;
+
+}
+.hero-area h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  line-height: 1.2;
+  width: 80%;
+  margin: 22px;
 }
 
 aside{
@@ -154,10 +179,11 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 0 22px;
 }
 
 aside .content-wrapper{
-  padding: 32px 0 53px 0;
+  padding: 22px 0 55px 22px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,31 +198,55 @@ aside .content-wrapper{
 }
 
 .form {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+  flex-direction: column;
+}
+.form h3{
+  justify-content: flex-start;
+}
+#email, #button{
+ margin: 10px 0;
+}
+#email input, #button input{
+  height: 50px;
+  width: 400px;
 }
 
 .features{
-  background: #999;
+  background-image: url("../img/rawpixel-800820-unsplash.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
   padding: 56px 0 60px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  flex-direction: column;
+}
+.features h3{
+  margin: 22px;
+  font-size: 3em;
+  
 }
 .features p{
   margin: 0;
 }
+
 .features article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
+  font-size: 1.5em;
   width: 55%;
+  margin: 55px 0;
+}
+
+.fontawesome-icon{
+  padding: 0 0 35px 0;
 }
 
 .reviews{
   background: #2a423a;
-  padding: 50px 0 50px 0;
+  padding: 50px 22px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,6 +254,15 @@ aside .content-wrapper{
 }
 .reviews h3{
   width: 80%;
+  font-size: 2.5em;
+  
+}
+#group-photo{
+  width: 100%;
+}
+.reviews h4{
+  width: 170px;
+  font-size: 1.2em;
 }
 
 /* Footer Styles */
@@ -328,6 +387,118 @@ footer .content-wrapper{
 
 @media only screen and (min-width: 768px){
   /*----Tablet styles here------*/
+
+  
+  .header-divider{
+    display: none;
+  }
+  header nav{
+    justify-content: flex-end;
+  }
+  header nav ul li a{
+    font-size: 1em;
+  }
+  
+  .hero-area {
+    height: 600px;
+  }
+  .hero-area h1{
+    font-size: 3em;
+    width: 60%;
+    margin: 0 65px;
+  }
+  aside{
+    padding: 0 65px;
+  }
+  
+  aside .content-wrapper{
+    justify-content: flex-start;
+    align-items: baseline;
+    padding: 0;
+  }
+  
+  .form-description{
+    width: 30%;
+  }
+  .form-description h3{
+    font-size: 1.5em;
+  }
+  .form-description p{
+    height: auto;
+    font-size: 1em;
+  }
+  
+  .form {
+    width: 30%;
+  }
+  .form h3{
+    font-size: 1.5em;
+    justify-content: flex-start;
+  }
+  #email, #button{
+   margin: 10px 0;
+  }
+  #email input, #button input{
+    height: 50px;
+    width: 250px;
+  }
+  .features{
+    padding: 56px 0 60px 0;
+    flex-direction: row;
+  }
+  .features h3{
+    justify-content: flex-start;
+    margin: 0 65px;
+    font-size: 3em;
+    
+  }
+  .features p{
+    margin: 0;
+    font-size: .6em;
+  }
+  
+  .features article{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    font-size: 1.5em;
+    width: 30%;
+    margin: 0;
+  }
+  
+  .fontawesome-icon{
+    padding: 0;
+  }
+  
+  .reviews{
+    background: #2a423a;
+    padding: 50px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .reviews h3{
+    width: 80%;
+    font-size: 2.5em;
+    
+  }
+  #group-photo{
+    width: 100%;
+  }
+  .reviews h4{
+    width: 170px;
+    font-size: 1.2em;
+  }
+  .contact{
+
+  }
+  
+  .social{
+  
+  }
+
 }
 
 @media only screen and (min-width: 1200px){
