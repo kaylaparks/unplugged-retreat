@@ -417,7 +417,7 @@ footer .content-wrapper{
   }
   .hero-area h1{
     font-size: 3em;
-    width: 60%;
+    width: 80%;
     margin: 0 65px;
   }
 
@@ -583,6 +583,201 @@ footer .content-wrapper{
 
 @media only screen and (min-width: 1200px){
   /*----Desktop styles here------*/
+
+  .content-wrapper {
+    margin: 0 120px;
+  }
+
+  /* ----- Header Styles ------*/
+  header{
+    justify-content: center;
+    height: 100px;
+  }
+  header .content-wrapper{
+    justify-content: space-between;
+  }
+  .header-divider{
+    display: none;
+  }
+  header nav{
+    
+  }
+  header nav ul li a{
+    font-size: 1em;
+  }
+  
+  /* ----- Main Styles ------*/
+
+  .hero-area {
+    height: 600px;
+  }
+  .hero-area h1{
+    font-size: 3em;
+    width: 80%;
+   
+  }
+
+  /* ----- Form Styles ------*/
+
+  aside{
+    height: 265px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  aside .content-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-flow: row wrap;
+    padding: 0;
+  }
+  
+  .form-description{
+    width: 50%;
+    
+  }
+  .form-description h3{
+    font-size: 1.5em;
+  }
+  .form-description p{
+    height: auto;
+    font-size: 1em;
+  }
+  
+  .form {
+    width: 30%;
+  }
+  .form h3{
+    font-size: 1.5em;
+    justify-content: flex-start;
+  }
+  #email, #button{
+   margin: 10px 0;
+  }
+  #email input, #button input{
+    height: 50px;
+    width: 320px;
+  }
+
+  /* ----- Features Styles ------*/
+
+  .features{
+    padding: 56px 0 60px 0;
+    flex-direction: row;
+  }
+  .features h3{
+    justify-content: flex-start;
+    margin: 0 65px;
+    font-size: 3em;
+    
+  }
+  .features p{
+    margin: 0;
+    font-size: .6em;
+  }
+  
+  .features article{
+    flex-basis: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    font-size: 1.5em;
+    width: 30%;
+    margin: 0;
+  }
+  
+  .fontawesome-icon{
+    padding: 0;
+  }
+  
+  /* ----- Review Styles ------*/
+
+  .reviews{
+    background: #2a423a;
+    padding: 50px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .reviews h3{
+    width: 80%;
+    font-size: 2.5em;
+    
+  }
+  #group-photo{
+    width: 100%;
+  }
+  .reviews h4{
+    width: 170px;
+    font-size: 1.2em;
+  }
+
+  /* ----- Footer Styles ------*/
+
+  footer .content-wrapper {
+    width: ;
+    margin:  100px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .contact {
+      margin-bottom: 0;
+  }
+
+  footer .copyright {
+      width: ;
+  }
+}
+
+
+/*------------------------------------------------------------------------------
+    ABOUT PAGE
+------------------------------------------------------------------------------*/
+
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mission-content p {
+  width: ;
+}
+
+.contact-section .content-wrapper h2 {
+  width: ;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*------------------------------------------------------------------------------
+    FAQ PAGE
+------------------------------------------------------------------------------*/
+
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+
+.faq-content {
+  flex-basis: 40%;
+}
+
+.faq h2 {
+  width: 100%;
+}
 }
 
 @media print,
