@@ -124,8 +124,10 @@ a {
 }
  
 h1{
+  font-family: 'Poppins', sans-serif;
   font-size: 2.5em;
   line-height: 1.2;
+  font-weight: lighter;
 }
 h2 {
   font-family: 'Poppins', sans-serif;
@@ -133,10 +135,11 @@ h2 {
  
 h3, 
 h4 {
+  font-weight: lighter;
   font-family: 'Poppins', sans-serif;
 }
 h3{
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 h4{
   font-size: 1.2em;
@@ -160,6 +163,32 @@ address {
  
 .content-wrapper {
  
+}
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: lightgrey;
+  font-style: italic;
+  padding: 0 0 0 20px;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /*---------------- Base Header - footer Styles --------------------*/
@@ -209,8 +238,10 @@ header nav ul li{
 }
 header nav ul li a{
   text-decoration: none;
+  font-weight: normal;
+  text-transform: uppercase;
   color: #ffffff;
-  padding: 10px;
+  padding: 30px;
 }
 
 /*---------------- Mobile Styles - Homepage --------------------*/
@@ -263,7 +294,10 @@ aside .content-wrapper{
 .form h3{
   justify-content: flex-start;
 }
-#email, #button{
+#email{
+  margin: 0 0 10px 0;
+}
+#button{
  margin: 10px 0;
 }
 #email input, #button input{
@@ -277,11 +311,15 @@ aside .content-wrapper{
   background-position: bottom;
   background-repeat: no-repeat;
   padding: 56px 0 60px 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
 }
 .features h3{
   margin: 22px;
-  font-size: 3em;
-  
+  font-size: 2.5em;
+  width: 85%;
 }
 .features p{
   margin: 0;
@@ -290,16 +328,19 @@ aside .content-wrapper{
 .features article{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   flex-flow: row wrap;
   text-align: center;
-  font-size: 1.5em;
   width: 55%;
   margin: 55px 0;
 }
 
 .fontawesome-icon{
-  padding: 0 0 35px 0;
+  padding: 0 10px 35px 10px;
+}
+
+.features-item-description{
+  width: 80%;
 }
 
 .reviews{
@@ -319,7 +360,6 @@ aside .content-wrapper{
 }
 .reviews h4{
   width: 170px;
-  
 }
 
 /* Footer Styles */
