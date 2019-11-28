@@ -150,11 +150,11 @@ p {
 }
  
 img {
- 
+ width: 100%
 }
  
 figure {
- 
+ margin: 0;
 }
  
 address {
@@ -248,9 +248,9 @@ header nav ul li a{
 
 .hero-area {
   height: 500px;
-  background-image: url("../img/jake-melara-30679-unsplash.png");
+  background-image: url("../img/jake-melara-30679-unsplash.png") ;
   background-size:cover;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   padding: 54px 0;
   display: flex;
@@ -353,13 +353,13 @@ aside .content-wrapper{
 }
 .reviews h3{
   width: 80%;
-  
+  font-size: 2.2em;
 }
-#group-photo{
-  width: 100%;
-}
+
 .reviews h4{
-  width: 170px;
+  width: 60%;
+  font-size: 1.5em;
+  font-weight: lighter;
 }
 
 /* Footer Styles */
